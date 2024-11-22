@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit Task</title>
+  </head>
+  <body>
+    <h1>Edit Task</h1>
+    <form action="/edit/<%= task._id %>" method="POST">
+      <label>Title:</label>
+      <input type="text" name="title" value="<%= task.title %>" required />
+      <br />
+      <label>Description:</label>
+      <textarea name="description"><%= task.description %></textarea>
+      <br />
+      <button>Update</button>
+    </form>
+  </body>
+</html>
